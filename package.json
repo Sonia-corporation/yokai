@@ -31,7 +31,6 @@
     "postinstall": "is-ci || husky install",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
-    "yo": "echo 1"
   },
   "private": true,
   "dependencies": {
