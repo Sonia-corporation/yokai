@@ -24,11 +24,7 @@
     "node": true,
     "jest": true
   },
-  "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module",
-    "project": "./tsconfig.json"
-  },
+  "parserOptions": { "project": ["tsconfig.*?.json"] },
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint", "typescript-sort-keys", "jest", "prettier", "progress", "jsdoc", "import"],
   "settings": {
@@ -41,8 +37,22 @@
     }
   },
   "rules": {
-    "@angular-eslint/directive-selector": ["error", { "type": "attribute", "prefix": "yokai", "style": "camelCase" }],
-    "@angular-eslint/component-selector": ["error", { "type": "element", "prefix": "yokai", "style": "kebab-case" }],
+    "@angular-eslint/directive-selector": [
+      "error",
+      {
+        "type": "attribute",
+        "prefix": "yokai",
+        "style": "camelCase"
+      }
+    ],
+    "@angular-eslint/component-selector": [
+      "error",
+      {
+        "type": "element",
+        "prefix": "yokai",
+        "style": "kebab-case"
+      }
+    ],
     "progress/activate": 1,
     "jest/no-done-callback": "error",
     "jest/no-disabled-tests": "off",
@@ -367,7 +377,7 @@
       }
     ],
     "@typescript-eslint/prefer-readonly-parameter-types": [
-      "warn",
+      "error",
       {
         "ignoreInferredTypes": true,
         "checkParameterProperties": false
@@ -434,118 +444,117 @@
       "extends": ["plugin:@nrwl/nx/angular-template"],
       "rules": {}
     },
-      {
-        "files": ["*.js"],
-        "rules": {
-          "@typescript-eslint/explicit-module-boundary-types": "off",
-          "import/no-commonjs": "off"
-        }
-      },
-      {
-        "files": ["*.ts"],
-        "extends": ["plugin:@nrwl/nx/angular", "plugin:@angular-eslint/template/process-inline-templates"],
-        "parserOptions": { "project": ["apps/game/tsconfig.*?.json"] },
-        "rules": {
-          "@typescript-eslint/explicit-function-return-type": [
-            "error",
-            {
-              "allowExpressions": false,
-              "allowTypedFunctionExpressions": false,
-              "allowHigherOrderFunctions": false
-            }
-          ],
-          "@typescript-eslint/no-var-requires": "error"
-        }
-      },
-      {
-        "files": ["*.spec.ts"],
-        "rules": {
-          "no-magic-numbers": "off",
-          "@typescript-eslint/ban-types": [
-            "error",
-            {
-              "types": {
-                "Readonly": {
-                  "message": "Sonia rule - This is useless inside the tests"
-                }
-              },
-              "extendDefaults": true
-            }
-          ],
-          "@typescript-eslint/naming-convention": [
-            "error",
-            {
-              "selector": "default",
-              "format": ["camelCase"]
+    {
+      "files": ["*.js"],
+      "rules": {
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "import/no-commonjs": "off"
+      }
+    },
+    {
+      "files": ["*.ts"],
+      "extends": ["plugin:@nrwl/nx/angular", "plugin:@angular-eslint/template/process-inline-templates"],
+      "rules": {
+        "@typescript-eslint/explicit-function-return-type": [
+          "error",
+          {
+            "allowExpressions": false,
+            "allowTypedFunctionExpressions": false,
+            "allowHigherOrderFunctions": false
+          }
+        ],
+        "@typescript-eslint/no-var-requires": "error"
+      }
+    },
+    {
+      "files": ["*.spec.ts"],
+      "rules": {
+        "no-magic-numbers": "off",
+        "@typescript-eslint/ban-types": [
+          "error",
+          {
+            "types": {
+              "Readonly": {
+                "message": "Sonia rule - This is useless inside the tests"
+              }
             },
-            {
-              "selector": "variable",
-              "format": ["camelCase", "UPPER_CASE"]
-            },
-            {
-              "selector": "variable",
-              "types": ["boolean"],
-              "format": ["camelCase", "UPPER_CASE"]
-            },
-            {
-              "selector": "parameter",
-              "format": ["camelCase"],
-              "leadingUnderscore": "allow"
-            },
-            {
-              "selector": "parameter",
-              "types": ["boolean"],
-              "format": ["camelCase"],
-              "leadingUnderscore": "allow"
-            },
-            {
-              "selector": "function",
-              "format": ["camelCase"]
-            },
-            {
-              "selector": "memberLike",
-              "modifiers": ["private"],
-              "format": ["camelCase"],
-              "leadingUnderscore": "require"
-            },
-            {
-              "selector": "memberLike",
-              "modifiers": ["protected"],
-              "format": ["camelCase"],
-              "leadingUnderscore": "require"
-            },
-            {
-              "selector": "typeLike",
-              "format": ["PascalCase"]
-            },
-            {
-              "selector": "typeParameter",
-              "format": ["PascalCase"],
-              "prefix": ["T"]
-            },
-            {
-              "selector": "interface",
-              "format": ["PascalCase"],
-              "prefix": ["I"]
-            },
-            {
-              "selector": "typeAlias",
-              "format": ["PascalCase"],
-              "prefix": ["I"]
-            },
-            {
-              "selector": "enumMember",
-              "format": ["UPPER_CASE"]
-            },
-            {
-              "selector": "enum",
-              "format": ["PascalCase"],
-              "suffix": ["Enum"]
-            }
-          ],
-          "@typescript-eslint/no-explicit-any": "off",
-          "@typescript-eslint/ban-ts-comment": "off"
-        }
-    ]
+            "extendDefaults": true
+          }
+        ],
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            "selector": "default",
+            "format": ["camelCase"]
+          },
+          {
+            "selector": "variable",
+            "format": ["camelCase", "UPPER_CASE"]
+          },
+          {
+            "selector": "variable",
+            "types": ["boolean"],
+            "format": ["camelCase", "UPPER_CASE"]
+          },
+          {
+            "selector": "parameter",
+            "format": ["camelCase"],
+            "leadingUnderscore": "allow"
+          },
+          {
+            "selector": "parameter",
+            "types": ["boolean"],
+            "format": ["camelCase"],
+            "leadingUnderscore": "allow"
+          },
+          {
+            "selector": "function",
+            "format": ["camelCase"]
+          },
+          {
+            "selector": "memberLike",
+            "modifiers": ["private"],
+            "format": ["camelCase"],
+            "leadingUnderscore": "require"
+          },
+          {
+            "selector": "memberLike",
+            "modifiers": ["protected"],
+            "format": ["camelCase"],
+            "leadingUnderscore": "require"
+          },
+          {
+            "selector": "typeLike",
+            "format": ["PascalCase"]
+          },
+          {
+            "selector": "typeParameter",
+            "format": ["PascalCase"],
+            "prefix": ["T"]
+          },
+          {
+            "selector": "interface",
+            "format": ["PascalCase"],
+            "prefix": ["I"]
+          },
+          {
+            "selector": "typeAlias",
+            "format": ["PascalCase"],
+            "prefix": ["I"]
+          },
+          {
+            "selector": "enumMember",
+            "format": ["UPPER_CASE"]
+          },
+          {
+            "selector": "enum",
+            "format": ["PascalCase"],
+            "suffix": ["Enum"]
+          }
+        ],
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/ban-ts-comment": "off"
+      }
+    }
   ]
 }
