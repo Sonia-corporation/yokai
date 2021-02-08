@@ -1,0 +1,8 @@
+{
+  "*.{ts,js}": [
+    "npm run lint:fix"
+  ],
+  "*.{md,json,yml}": [
+    "npm run format:write:ci"
+  ]
+}
