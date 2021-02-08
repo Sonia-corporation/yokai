@@ -161,7 +161,7 @@
     "new-cap": [
       "error",
       {
-        "capIsNewExceptions": ["StoreConfig"]
+        "capIsNewExceptions": ["Component", "NgModule"]
       }
     ],
     "@typescript-eslint/naming-convention": [
