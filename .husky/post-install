@@ -1,4 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points
+node ./decorate-angular-cli.js
+ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points
