@@ -4,7 +4,7 @@
   "plugins": ["@nrwl/nx"],
   "overrides": [
     {
-      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "files": ["*.ts", "*.js"],
       "rules": {
         "@nrwl/nx/enforce-module-boundaries": [
           "error",
@@ -17,15 +17,13 @@
       }
     },
     {
-      "files": ["*.ts", "*.tsx"],
+      "files": ["*.ts"],
       "extends": ["plugin:@nrwl/nx/typescript"],
-      "parserOptions": { "project": "./tsconfig.*?.json" },
-      "rules": {}
+      "parserOptions": { "project": "./tsconfig.*?.json" }
     },
     {
-      "files": ["*.js", "*.jsx"],
-      "extends": ["plugin:@nrwl/nx/javascript"],
-      "rules": {}
+      "files": ["*.js"],
+      "extends": ["plugin:@nrwl/nx/javascript"]
     }
   ]
 }

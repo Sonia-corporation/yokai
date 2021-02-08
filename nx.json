@@ -19,12 +19,7 @@
       "runner": "@nrwl/nx-cloud",
       "options": {
         "accessToken": "NTcyMDk2Y2EtNjMyOS00MGFjLWI1MTMtMzY2ZTRlM2EwNmFhfHJlYWQtd3JpdGU=",
-        "cacheableOperations": [
-          "build",
-          "test",
-          "lint",
-          "e2e"
-        ],
+        "cacheableOperations": ["build", "test", "lint", "e2e"],
         "canTrackAnalytics": false,
         "showUsageWarnings": true
       }
@@ -36,9 +31,7 @@
     },
     "game-e2e": {
       "tags": [],
-      "implicitDependencies": [
-        "game"
-      ]
+      "implicitDependencies": ["game"]
     }
   }
 }

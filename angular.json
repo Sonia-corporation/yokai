@@ -101,10 +101,7 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/game/src/**/*.ts",
-              "apps/game/src/**/*.html"
-            ]
+            "lintFilePatterns": ["apps/game/src/**/*.ts", "apps/game/src/**/*.html"]
           }
         },
         "test": {
