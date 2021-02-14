@@ -24,7 +24,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Cache dependencies
+      - name: Install dependencies
         uses: bahmutov/npm-install@v1
       - name: Lint ESLint
         run: npm run lint:ci
@@ -43,7 +43,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Cache dependencies
+      - name: Install dependencies
         uses: bahmutov/npm-install@v1
       - name: Test
         run: npm run test:ci
@@ -62,7 +62,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Cache dependencies
+      - name: Install dependencies
         uses: bahmutov/npm-install@v1
       - name: Coverage
         uses: paambaati/codeclimate-action@v2.7.5
@@ -111,7 +111,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Cache dependencies
+      - name: Install dependencies
         uses: bahmutov/npm-install@v1
       - name: Build
         run: npm run build:prod
