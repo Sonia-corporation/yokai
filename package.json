@@ -30,7 +30,7 @@
     "help": "nx help",
     "postinstall": "is-ci || husky install",
     "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable",
+    "postpublish": "pinst --enable"
   },
   "private": true,
   "dependencies": {
@@ -55,6 +55,7 @@
     "@angular/cli": "~11.0.0",
     "@angular/compiler-cli": "^11.0.0",
     "@angular/language-service": "^11.0.0",
+    "@ngneat/spectator": "^7.0.0",
     "@nrwl/cli": "11.2.10",
     "@nrwl/cypress": "11.2.10",
     "@nrwl/eslint-plugin-nx": "11.2.10",
