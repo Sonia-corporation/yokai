@@ -9,10 +9,6 @@ on:
     branches:
       - master
       - develop
-  pull_request:
-    branches:
-      - master
-      - develop
 jobs:
   Lint:
     runs-on: ubuntu-latest
