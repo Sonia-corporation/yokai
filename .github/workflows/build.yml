@@ -104,6 +104,8 @@ jobs:
         uses: paambaati/codeclimate-action@v2.7.5
         with:
           coverageCommand: npm run test:ci:coverage
+          coverageLocations: |
+            - ${{github.workspace}}/coverage/apps/game/lcov.info
           debug: true
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
@@ -143,6 +145,7 @@ jobs:
           fail_ci_if_error: true
           flags: integration
           name: Yokai
+          files: ./coverage/apps/game/lcov.info
   Build:
     runs-on: ubuntu-latest
     strategy:

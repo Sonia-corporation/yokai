@@ -1,7 +1,8 @@
 {
   "version": 1,
   "cli": {
-    "defaultCollection": "@nrwl/angular"
+    "defaultCollection": "@nrwl/angular",
+    "analytics": "7e16e71a-a58c-4572-8f01-912841b7737c"
   },
   "schematics": {
     "@nrwl/angular": {
@@ -47,8 +48,13 @@
             "polyfills": "apps/game/src/polyfills.ts",
             "tsConfig": "apps/game/tsconfig.app.json",
             "aot": true,
-            "assets": ["apps/game/src/favicon.ico", "apps/game/src/assets"],
-            "styles": ["apps/game/src/styles.scss"],
+            "assets": [
+              "apps/game/src/favicon.ico",
+              "apps/game/src/assets"
+            ],
+            "styles": [
+              "apps/game/src/styles.scss"
+            ],
             "scripts": [],
             "buildOptimizer": true,
             "optimization": true,
@@ -122,12 +128,17 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/game/src/**/*.ts", "apps/game/src/**/*.html"]
+            "lintFilePatterns": [
+              "apps/game/src/**/*.ts",
+              "apps/game/src/**/*.html"
+            ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/game"],
+          "outputs": [
+            "coverage/apps/game"
+          ],
           "options": {
             "jestConfig": "apps/game/jest.config.js",
             "passWithNoTests": true
@@ -156,7 +167,9 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/game-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/game-e2e/**/*.{js,ts}"
+            ]
           }
         }
       }
