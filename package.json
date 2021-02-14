@@ -134,6 +134,9 @@
     "@semantic-release/git": "^9.0.0",
     "@semantic-release/github": "^7.2.0",
     "@sonia-corporation/conventional-changelog": "^1.0.1",
+    "@stryker-mutator/core": "^4.4.1",
+    "@stryker-mutator/jest-runner": "^4.4.1",
+    "@stryker-mutator/typescript-checker": "^4.4.1",
     "@types/jest": "26.0.8",
     "@types/node": "12.12.38",
     "@typescript-eslint/eslint-plugin": "4.15.0",
@@ -167,6 +170,7 @@
     "pinst": "^2.1.4",
     "prettier": "2.2.1",
     "semantic-release": "^17.3.9",
+    "stryker-cli": "^1.0.0",
     "ts-jest": "26.4.0",
     "ts-node": "~9.1.1",
     "typescript": "~4.0.3"
