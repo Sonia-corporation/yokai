@@ -5,3 +5,10 @@
 *.js
 *.ts
 *.html
+CHANGELOG.md
+.cache
+.cache-jest
+node_modules
+.eslintcache
+package-lock.json
+coverage
