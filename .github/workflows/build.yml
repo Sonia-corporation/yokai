@@ -145,7 +145,7 @@ jobs:
           fail_ci_if_error: true
           flags: integration
           name: Yokai
-          files: ./coverage/apps/game/lcov.info
+          files: ${{github.workspace}}/coverage/apps/game/lcov.info
   Build:
     runs-on: ubuntu-latest
     strategy:
