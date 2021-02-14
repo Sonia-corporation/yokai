@@ -1,0 +1,14 @@
+# Add files here to ignore them from prettier formatting
+
+/dist
+/coverage
+*.js
+*.ts
+*.html
+CHANGELOG.md
+.cache
+.cache-jest
+node_modules
+.eslintcache
+package-lock.json
+coverage

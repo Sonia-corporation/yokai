@@ -1,0 +1,649 @@
+21:58:29 (18536) WARN InputFileResolver Globbing expression "apps/**/__mocks__/*.spec.ts" did not result in any files.
+21:58:29 (18536) WARN InputFileResolver Globbing expression "apps/**/__mocks__/" did not result in any files.
+21:58:29 (18536) INFO InputFileResolver Found 11 of 95 file(s) to be mutated.
+21:58:29 (18536) INFO Instrumenter Instrumented 11 source file(s) with 13 mutant(s)
+21:58:29 (18536) INFO ConcurrencyTokenProvider Creating 8 checker process(es) and 7 test runner process(es).
+21:58:30 (18536) ERROR Stryker Error: Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: The tsconfig file does not exist at: "S:\C0ZEN\Documents\sonia\yokai\tsconfig.json". Please configure the tsconfig file in your stryker.conf file using "tsconfigFile"
+Error: The tsconfig file does not exist at: "S:\C0ZEN\Documents\sonia\yokai\tsconfig.json". Please configure the tsconfig file in your stryker.conf file using "tsconfigFile"
+    at TypescriptChecker.guardTSConfigFileExists (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:99:19)
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:57:14)
+    at CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:35)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: The tsconfig file does not exist at: "S:\C0ZEN\Documents\sonia\yokai\tsconfig.json". Please configure the tsconfig file in your stryker.conf file using "tsconfigFile"
+Error: The tsconfig file does not exist at: "S:\C0ZEN\Documents\sonia\yokai\tsconfig.json". Please configure the tsconfig file in your stryker.conf file using "tsconfigFile"
+    at TypescriptChecker.guardTSConfigFileExists (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:99:19)
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:57:14)
+    at CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:35)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:24:27)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at ChildProcess.<anonymous> (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy.js:132:68)
+    at ChildProcess.emit (events.js:315:20)
+    at emit (internal/child_process.js:906:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+21:58:30 (18536) INFO Stryker Trouble figuring out what went wrong? Try `npx stryker run --fileLogLevel trace --logLevel debug` to get some more info.
+22:03:33 (18508) WARN InputFileResolver Globbing expression "apps/**/__mocks__/*.spec.ts" did not result in any files.
+22:03:33 (18508) WARN InputFileResolver Globbing expression "apps/**/__mocks__/" did not result in any files.
+22:03:33 (18508) INFO InputFileResolver Found 11 of 95 file(s) to be mutated.
+22:03:33 (18508) INFO Instrumenter Instrumented 11 source file(s) with 13 mutant(s)
+22:03:33 (18508) INFO ConcurrencyTokenProvider Creating 8 checker process(es) and 7 test runner process(es).
+22:03:37 (18508) ERROR Stryker Error: Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:24:27)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at ChildProcess.<anonymous> (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy.js:132:68)
+    at ChildProcess.emit (events.js:315:20)
+    at emit (internal/child_process.js:906:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+22:03:37 (18508) INFO Stryker Trouble figuring out what went wrong? Try `npx stryker run --fileLogLevel trace --logLevel debug` to get some more info.
+22:04:27 (4356) WARN InputFileResolver Globbing expression "apps/**/__mocks__/*.spec.ts" did not result in any files.
+22:04:27 (4356) WARN InputFileResolver Globbing expression "apps/**/__mocks__/" did not result in any files.
+22:04:27 (4356) WARN InputFileResolver Globbing expression "apps/*-e2e" did not result in any files.
+22:04:27 (4356) INFO InputFileResolver Found 11 of 95 file(s) to be mutated.
+22:04:27 (4356) INFO Instrumenter Instrumented 11 source file(s) with 13 mutant(s)
+22:04:27 (4356) INFO ConcurrencyTokenProvider Creating 8 checker process(es) and 7 test runner process(es).
+22:04:31 (4356) ERROR Stryker Error: Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:24:27)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at ChildProcess.<anonymous> (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy.js:132:68)
+    at ChildProcess.emit (events.js:315:20)
+    at emit (internal/child_process.js:906:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+22:04:31 (4356) INFO Stryker Trouble figuring out what went wrong? Try `npx stryker run --fileLogLevel trace --logLevel debug` to get some more info.
+22:04:42 (12848) WARN InputFileResolver Globbing expression "apps/**/__mocks__/*.spec.ts" did not result in any files.
+22:04:42 (12848) WARN InputFileResolver Globbing expression "apps/**/__mocks__/" did not result in any files.
+22:04:42 (12848) WARN InputFileResolver Globbing expression "apps/*-e2e/" did not result in any files.
+22:04:42 (12848) INFO InputFileResolver Found 11 of 95 file(s) to be mutated.
+22:04:42 (12848) INFO Instrumenter Instrumented 11 source file(s) with 13 mutant(s)
+22:04:42 (12848) INFO ConcurrencyTokenProvider Creating 8 checker process(es) and 7 test runner process(es).
+22:04:46 (12848) ERROR Stryker Error: Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:24:27)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at ChildProcess.<anonymous> (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy.js:132:68)
+    at ChildProcess.emit (events.js:315:20)
+    at emit (internal/child_process.js:906:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+22:04:46 (12848) INFO Stryker Trouble figuring out what went wrong? Try `npx stryker run --fileLogLevel trace --logLevel debug` to get some more info.
+22:05:02 (22256) WARN InputFileResolver Globbing expression "apps/**/__mocks__/*.spec.ts" did not result in any files.
+22:05:02 (22256) WARN InputFileResolver Globbing expression "apps/**/__mocks__/" did not result in any files.
+22:05:02 (22256) INFO InputFileResolver Found 8 of 95 file(s) to be mutated.
+22:05:02 (22256) INFO Instrumenter Instrumented 8 source file(s) with 8 mutant(s)
+22:05:02 (22256) INFO ConcurrencyTokenProvider Creating 8 checker process(es) and 7 test runner process(es).
+22:05:06 (22256) ERROR Stryker Error: Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:24:27)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at ChildProcess.<anonymous> (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy.js:132:68)
+    at ChildProcess.emit (events.js:315:20)
+    at emit (internal/child_process.js:906:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+22:05:06 (22256) INFO Stryker Trouble figuring out what went wrong? Try `npx stryker run --fileLogLevel trace --logLevel debug` to get some more info.
+22:05:20 (28492) WARN InputFileResolver Globbing expression "apps/**/__mocks__/*.spec.ts" did not result in any files.
+22:05:20 (28492) WARN InputFileResolver Globbing expression "apps/**/__mocks__/" did not result in any files.
+22:05:20 (28492) WARN InputFileResolver Globbing expression "apps/game-e2e/" did not result in any files.
+22:05:20 (28492) INFO InputFileResolver Found 11 of 95 file(s) to be mutated.
+22:05:20 (28492) INFO Instrumenter Instrumented 11 source file(s) with 13 mutant(s)
+22:05:20 (28492) INFO ConcurrencyTokenProvider Creating 8 checker process(es) and 7 test runner process(es).
+22:05:24 (28492) ERROR Stryker Error: Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:24:27)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at ChildProcess.<anonymous> (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy.js:132:68)
+    at ChildProcess.emit (events.js:315:20)
+    at emit (internal/child_process.js:906:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+22:05:24 (28492) INFO Stryker Trouble figuring out what went wrong? Try `npx stryker run --fileLogLevel trace --logLevel debug` to get some more info.
+22:05:37 (6688) WARN InputFileResolver Globbing expression "apps/**/__mocks__/*.spec.ts" did not result in any files.
+22:05:37 (6688) WARN InputFileResolver Globbing expression "apps/**/__mocks__/" did not result in any files.
+22:05:37 (6688) WARN InputFileResolver Globbing expression "apps/game-e2e" did not result in any files.
+22:05:37 (6688) INFO InputFileResolver Found 11 of 95 file(s) to be mutated.
+22:05:38 (6688) INFO Instrumenter Instrumented 11 source file(s) with 13 mutant(s)
+22:05:38 (6688) INFO ConcurrencyTokenProvider Creating 8 checker process(es) and 7 test runner process(es).
+22:05:42 (6688) ERROR Stryker Error: Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:24:27)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at ChildProcess.<anonymous> (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy.js:132:68)
+    at ChildProcess.emit (events.js:315:20)
+    at emit (internal/child_process.js:906:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+22:05:42 (6688) INFO Stryker Trouble figuring out what went wrong? Try `npx stryker run --fileLogLevel trace --logLevel debug` to get some more info.
+22:05:49 (21716) WARN InputFileResolver Globbing expression "apps/**/__mocks__/*.spec.ts" did not result in any files.
+22:05:50 (21716) WARN InputFileResolver Globbing expression "apps/**/__mocks__/" did not result in any files.
+22:05:50 (21716) INFO InputFileResolver Found 8 of 95 file(s) to be mutated.
+22:05:50 (21716) INFO Instrumenter Instrumented 8 source file(s) with 8 mutant(s)
+22:05:50 (21716) INFO ConcurrencyTokenProvider Creating 8 checker process(es) and 7 test runner process(es).
+22:05:54 (21716) ERROR Stryker Error: Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:24:27)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at ChildProcess.<anonymous> (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy.js:132:68)
+    at ChildProcess.emit (events.js:315:20)
+    at emit (internal/child_process.js:906:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+22:05:54 (21716) INFO Stryker Trouble figuring out what went wrong? Try `npx stryker run --fileLogLevel trace --logLevel debug` to get some more info.
+22:06:14 (12496) WARN InputFileResolver Globbing expression "apps/**/__mocks__/*.spec.ts" did not result in any files.
+22:06:14 (12496) WARN InputFileResolver Globbing expression "apps/**/__mocks__/" did not result in any files.
+22:06:14 (12496) INFO InputFileResolver Found 8 of 95 file(s) to be mutated.
+22:06:14 (12496) INFO Instrumenter Instrumented 8 source file(s) with 8 mutant(s)
+22:06:14 (12496) INFO ConcurrencyTokenProvider Creating 8 checker process(es) and 7 test runner process(es).
+22:06:18 (12496) ERROR Stryker Error: Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:24:27)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at ChildProcess.<anonymous> (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy.js:132:68)
+    at ChildProcess.emit (events.js:315:20)
+    at emit (internal/child_process.js:906:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+22:06:18 (12496) INFO Stryker Trouble figuring out what went wrong? Try `npx stryker run --fileLogLevel trace --logLevel debug` to get some more info.
+22:06:33 (28440) WARN InputFileResolver Globbing expression "apps/**/__mocks__/*.spec.ts" did not result in any files.
+22:06:33 (28440) WARN InputFileResolver Globbing expression "apps/**/__mocks__/" did not result in any files.
+22:06:33 (28440) INFO InputFileResolver Found 8 of 95 file(s) to be mutated.
+22:06:33 (28440) INFO Instrumenter Instrumented 8 source file(s) with 8 mutant(s)
+22:06:33 (28440) INFO ConcurrencyTokenProvider Creating 8 checker process(es) and 7 test runner process(es).
+22:06:37 (28440) ERROR Stryker Error: Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:24:27)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at ChildProcess.<anonymous> (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy.js:132:68)
+    at ChildProcess.emit (events.js:315:20)
+    at emit (internal/child_process.js:906:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+22:06:37 (28440) INFO Stryker Trouble figuring out what went wrong? Try `npx stryker run --fileLogLevel trace --logLevel debug` to get some more info.
+22:08:04 (21716) WARN InputFileResolver Globbing expression "apps/**/__mocks__/*.spec.ts" did not result in any files.
+22:08:04 (21716) WARN InputFileResolver Globbing expression "apps/**/__mocks__/" did not result in any files.
+22:08:04 (21716) INFO InputFileResolver Found 13 of 95 file(s) to be mutated.
+22:08:04 (21716) INFO Instrumenter Instrumented 13 source file(s) with 29 mutant(s)
+22:08:04 (21716) INFO ConcurrencyTokenProvider Creating 8 checker process(es) and 7 test runner process(es).
+22:08:08 (21716) ERROR Stryker Error: Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:24:27)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at ChildProcess.<anonymous> (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy.js:132:68)
+    at ChildProcess.emit (events.js:315:20)
+    at emit (internal/child_process.js:906:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+22:08:08 (21716) INFO Stryker Trouble figuring out what went wrong? Try `npx stryker run --fileLogLevel trace --logLevel debug` to get some more info.
+22:08:19 (26268) WARN InputFileResolver Globbing expression "apps/**/__mocks__/*.spec.ts" did not result in any files.
+22:08:19 (26268) WARN InputFileResolver Globbing expression "apps/**/__mocks__/" did not result in any files.
+22:08:19 (26268) WARN InputFileResolver Globbing expression "apps/game-e2e/" did not result in any files.
+22:08:19 (26268) INFO InputFileResolver Found 13 of 95 file(s) to be mutated.
+22:08:19 (26268) INFO Instrumenter Instrumented 13 source file(s) with 29 mutant(s)
+22:08:19 (26268) INFO ConcurrencyTokenProvider Creating 8 checker process(es) and 7 test runner process(es).
+22:08:23 (26268) ERROR Stryker Error: Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:24:27)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at ChildProcess.<anonymous> (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy.js:132:68)
+    at ChildProcess.emit (events.js:315:20)
+    at emit (internal/child_process.js:906:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+22:08:23 (26268) INFO Stryker Trouble figuring out what went wrong? Try `npx stryker run --fileLogLevel trace --logLevel debug` to get some more info.
+22:08:26 (18300) WARN InputFileResolver Globbing expression "apps/**/__mocks__/*.spec.ts" did not result in any files.
+22:08:26 (18300) WARN InputFileResolver Globbing expression "apps/**/__mocks__/" did not result in any files.
+22:08:26 (18300) WARN InputFileResolver Globbing expression "apps/game-e2e" did not result in any files.
+22:08:26 (18300) INFO InputFileResolver Found 13 of 95 file(s) to be mutated.
+22:08:26 (18300) INFO Instrumenter Instrumented 13 source file(s) with 29 mutant(s)
+22:08:26 (18300) INFO ConcurrencyTokenProvider Creating 8 checker process(es) and 7 test runner process(es).
+22:08:30 (18300) ERROR Stryker Error: Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:24:27)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at ChildProcess.<anonymous> (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy.js:132:68)
+    at ChildProcess.emit (events.js:315:20)
+    at emit (internal/child_process.js:906:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+22:08:30 (18300) INFO Stryker Trouble figuring out what went wrong? Try `npx stryker run --fileLogLevel trace --logLevel debug` to get some more info.
+22:08:48 (4936) WARN InputFileResolver Globbing expression "apps/**/__mocks__/*.spec.ts" did not result in any files.
+22:08:48 (4936) WARN InputFileResolver Globbing expression "apps/**/__mocks__/" did not result in any files.
+22:08:48 (4936) INFO InputFileResolver Found 13 of 95 file(s) to be mutated.
+22:08:48 (4936) INFO Instrumenter Instrumented 13 source file(s) with 29 mutant(s)
+22:08:48 (4936) INFO ConcurrencyTokenProvider Creating 8 checker process(es) and 7 test runner process(es).
+22:08:52 (4936) ERROR Stryker Error: Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:24:27)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at ChildProcess.<anonymous> (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy.js:132:68)
+    at ChildProcess.emit (events.js:315:20)
+    at emit (internal/child_process.js:906:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+22:08:52 (4936) INFO Stryker Trouble figuring out what went wrong? Try `npx stryker run --fileLogLevel trace --logLevel debug` to get some more info.
+22:09:11 (10344) WARN InputFileResolver Globbing expression "apps/**/__mocks__/*.spec.ts" did not result in any files.
+22:09:11 (10344) WARN InputFileResolver Globbing expression "apps/**/__mocks__/" did not result in any files.
+22:09:11 (10344) WARN InputFileResolver Globbing expression "apps/game-e2e/***.ts" did not result in any files.
+22:09:11 (10344) INFO InputFileResolver Found 13 of 95 file(s) to be mutated.
+22:09:11 (10344) INFO Instrumenter Instrumented 13 source file(s) with 29 mutant(s)
+22:09:11 (10344) INFO ConcurrencyTokenProvider Creating 8 checker process(es) and 7 test runner process(es).
+22:09:16 (10344) ERROR Stryker Error: Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:24:27)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at ChildProcess.<anonymous> (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy.js:132:68)
+    at ChildProcess.emit (events.js:315:20)
+    at emit (internal/child_process.js:906:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+22:09:16 (10344) INFO Stryker Trouble figuring out what went wrong? Try `npx stryker run --fileLogLevel trace --logLevel debug` to get some more info.
+22:09:28 (2080) WARN InputFileResolver Globbing expression "apps/**/__mocks__/*.spec.ts" did not result in any files.
+22:09:28 (2080) WARN InputFileResolver Globbing expression "apps/**/__mocks__/" did not result in any files.
+22:09:28 (2080) INFO InputFileResolver Found 9 of 95 file(s) to be mutated.
+22:09:29 (2080) INFO Instrumenter Instrumented 9 source file(s) with 15 mutant(s)
+22:09:29 (2080) INFO ConcurrencyTokenProvider Creating 8 checker process(es) and 7 test runner process(es).
+22:09:33 (2080) ERROR Stryker Error: Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+Error: An error occurred during initialization of the "typescript" checker. Inner error: Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+Error: TypeScript error(s) found in dry run compilation: apps/game-e2e/src/support/app.po.ts(1,34): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(4,20): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/integration/app.spec.ts(8,5): error TS2304: Cannot find name 'cy'.
+apps/game-e2e/src/support/commands.ts(20,1): error TS2708: Cannot use namespace 'Cypress' as a value.
+
+    at TypescriptChecker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\typescript-checker\dist\src\typescript-checker.js:94:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:21:21)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at CheckerWorker.init (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\checker\checker-worker.js:24:27)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async ChildProcessProxyWorker.handleCall (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy-worker.js:62:28)
+    at ChildProcess.<anonymous> (S:\C0ZEN\Documents\sonia\yokai\node_modules\@stryker-mutator\core\src\child-proxy\child-process-proxy.js:132:68)
+    at ChildProcess.emit (events.js:315:20)
+    at emit (internal/child_process.js:906:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+22:09:33 (2080) INFO Stryker Trouble figuring out what went wrong? Try `npx stryker run --fileLogLevel trace --logLevel debug` to get some more info.

@@ -1,0 +1,4 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+LOGGING_LEVEL=debug cz-customizable-ghooks

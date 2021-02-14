@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "ignorePatterns": ["**/*"],
+  "plugins": ["@nrwl/nx"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.js"],
+      "rules": {
+        "@nrwl/nx/enforce-module-boundaries": [
+          "error",
+          {
+            "enforceBuildableLibDependency": true,
+            "allow": [],
+            "depConstraints": [{ "sourceTag": "*", "onlyDependOnLibsWithTags": ["*"] }]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.ts"],
+      "extends": ["plugin:@nrwl/nx/typescript"],
+      "parserOptions": { "project": "./tsconfig.*?.json" }
+    },
+    {
+      "files": ["*.js"],
+      "extends": ["plugin:@nrwl/nx/javascript"]
+    }
+  ]
+}

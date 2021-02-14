@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "cli": {
+    "defaultCollection": "@nrwl/angular",
+    "analytics": "7e16e71a-a58c-4572-8f01-912841b7737c"
+  },
+  "schematics": {
+    "@nrwl/angular": {
+      "application": {
+        "linter": "eslint"
+      },
+      "library": {
+        "linter": "eslint"
+      },
+      "storybook-configuration": {
+        "linter": "eslint"
+      }
+    },
+    "@nrwl/angular:application": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
+    },
+    "@nrwl/angular:library": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "jest"
+    },
+    "@nrwl/angular:component": {
+      "style": "scss"
+    }
+  },
+  "defaultProject": "game",
+  "projects": {
+    "game": {
+      "projectType": "application",
+      "root": "apps/game",
+      "sourceRoot": "apps/game/src",
+      "prefix": "yokai",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/game",
+            "index": "apps/game/src/index.html",
+            "main": "apps/game/src/main.ts",
+            "polyfills": "apps/game/src/polyfills.ts",
+            "tsConfig": "apps/game/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "apps/game/src/favicon.ico",
+              "apps/game/src/assets"
+            ],
+            "styles": [
+              "apps/game/src/styles.scss"
+            ],
+            "scripts": [],
+            "buildOptimizer": true,
+            "optimization": true,
+            "outputHashing": "all",
+            "sourceMap": false,
+            "extractCss": true,
+            "namedChunks": true,
+            "progress": true,
+            "extractLicenses": true,
+            "verbose": false,
+            "statsJson": false,
+            "showCircularDependencies": true,
+            "vendorChunk": true,
+            "commonChunk": true
+          },
+          "configurations": {
+            "dev": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "outputHashing": "none",
+              "sourceMap": true,
+              "extractCss": false,
+              "progress": true,
+              "extractLicenses": false,
+              "showCircularDependencies": false
+            },
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/game/src/environments/environment.ts",
+                  "with": "apps/game/src/environments/environment.prod.ts"
+                }
+              ],
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "game:build"
+          },
+          "configurations": {
+            "dev": {
+              "browserTarget": "game:build:dev",
+              "hmr": true,
+              "hmrWarning": false,
+              "liveReload": true,
+              "verbose": false,
+              "watch": true
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "game:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/game/src/**/*.ts",
+              "apps/game/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/game"
+          ],
+          "options": {
+            "jestConfig": "apps/game/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "game-e2e": {
+      "root": "apps/game-e2e",
+      "sourceRoot": "apps/game-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/game-e2e/cypress.json",
+            "tsConfig": "apps/game-e2e/tsconfig.e2e.json",
+            "devServerTarget": "game:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "game:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/game-e2e/**/*.{js,ts}"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
