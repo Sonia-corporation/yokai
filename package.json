@@ -1,16 +1,80 @@
 {
   "name": "yokai",
   "version": "0.0.0",
+  "author": {
+    "email": "geoffrey.testelin@gmail.com",
+    "name": "Geoffrey 'C0ZEN' Testelin",
+    "url": "https://github.com/C0ZEN"
+  },
+  "contributors": [
+    {
+      "email": "geoffrey.testelin@gmail.com",
+      "name": "Geoffrey 'C0ZEN' Testelin",
+      "url": "https://github.com/C0ZEN"
+    }
+  ],
+  "description": "The Sonia Yokai game",
+  "homepage": "https://github.com/Sonia-corporation/yokai",
+  "maintainers": [
+    {
+      "email": "geoffrey.testelin@gmail.com",
+      "name": "Geoffrey 'C0ZEN' Testelin",
+      "url": "https://github.com/C0ZEN"
+    }
+  ],
   "license": "MIT",
+  "keywords": [
+    "sonia",
+    "yokai",
+    "angular"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sonia-corporation/yokai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sonia-corporation/yokai/issues"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./scripts/commitizen.js"
+    }
+  },
+  "engines": {
+    "node": ">=12.x",
+    "npm": ">=6"
+  },
+  "private": false,
+  "files": [
+    "dist/*",
+    "CHANGELOG.md",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "package.json",
+    "package-lock.json",
+    "README.md"
+  ],
+  "main": "./apps/game/src/main.ts",
   "scripts": {
-    "ng": "nx",
-    "nx": "nx",
+    "\n# RUN SCRIPTS:": "",
     "start": "ng serve",
     "build": "ng build",
+    "\n# TEST SCRIPTS:": "",
     "test": "ng test",
+    "e2e": "ng e2e",
+    "\n# LINT SCRIPTS:": "",
     "lint": "nx workspace-lint && ng lint --cache --cache-location .eslintcache",
     "lint:fix": "nx workspace-lint && ng lint --fix --cache --cache-location .eslintcache",
-    "e2e": "ng e2e",
+    "format": "nx format:write",
+    "format:write": "nx format:write --verbose",
+    "format:write:ci": "nx format:write --verbose --uncommitted",
+    "format:check": "nx format:check --verbose",
+    "format:check:ci": "nx format:check --verbose --uncommitted",
+    "\n# UTILS SCRIPTS:": "",
     "affected:apps": "nx affected:apps",
     "affected:libs": "nx affected:libs",
     "affected:build": "nx affected:build",
@@ -19,20 +83,22 @@
     "affected:lint": "nx affected:lint",
     "affected:dep-graph": "nx affected:dep-graph",
     "affected": "nx affected",
-    "format": "nx format:write",
-    "format:write": "nx format:write --verbose",
-    "format:write:ci": "nx format:write --verbose --uncommitted",
-    "format:check": "nx format:check --verbose",
-    "format:check:ci": "nx format:check --verbose --uncommitted",
     "update": "nx migrate latest",
     "workspace-generator": "nx workspace-generator",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
     "postinstall": "is-ci || husky install",
     "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable"
+    "postpublish": "pinst --enable",
+    "ng": "nx",
+    "nx": "nx",
+    "cz": "git add . && git-cz && npm run git:push",
+    "semver": "semantic-release",
+    "commit": "npm run cz",
+    "git:push": "git push-upstream",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^11.0.0",
     "@angular/common": "^11.0.0",
