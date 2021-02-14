@@ -1,6 +1,6 @@
 import { AppComponent } from './app.component';
 import { RouterTestingModule } from '@angular/router/testing';
-import { createComponentFactory, Spectator } from '@ngneat/spectator';
+import { Spectator, createComponentFactory } from '@ngneat/spectator/jest';
 
 describe(`AppComponent`, (): void => {
   let spectator: Spectator<AppComponent>;

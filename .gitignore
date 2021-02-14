@@ -40,3 +40,6 @@ Thumbs.db
 
 # ESLint
 .eslintcache
+
+# Jest cache
+.cache-jest
