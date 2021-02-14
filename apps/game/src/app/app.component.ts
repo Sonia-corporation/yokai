@@ -4,6 +4,5 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
   selector: `yokai-root`,
   templateUrl: `./app.component.html`,
-  styleUrls: [`./app.component.scss`],
 })
 export class AppComponent {}
