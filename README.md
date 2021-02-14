@@ -4,11 +4,11 @@
 
 **Quality:**  
 ![GitHub last commit](https://img.shields.io/github/last-commit/sonia-corporation/yokai?style=flat-square)
-[![Maintainability](https://api.codeclimate.com/v1/badges/a15731adba332ed97275/maintainability?style=flat-square)](https://codeclimate.com/github/Sonia-corporation/yokai/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/ea7ab23017f0dc8e374c/maintainability?style=flat-square)](https://codeclimate.com/github/Sonia-corporation/yokai/maintainability)
 [![CodeFactor](https://www.codefactor.io/repository/github/sonia-corporation/yokai/badge)](https://www.codefactor.io/repository/github/sonia-corporation/yokai)
 [![DeepScan grade](https://deepscan.io/api/teams/10568/projects/13410/branches/225363/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=10568&pid=13410&bid=225363)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a15731adba332ed97275/test_coverage?style=flat-square)](https://codeclimate.com/github/Sonia-corporation/yokai/test_coverage)
-[![codecov](https://codecov.io/gh/Sonia-corporation/yokai/branch/develop/graph/badge.svg?token=S4MUQF1TIY)](https://codecov.io/gh/Sonia-corporation/yokai)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/ea7ab23017f0dc8e374c/test_coverage?style=flat-square)](https://codeclimate.com/github/Sonia-corporation/yokai/test_coverage)
+[![codecov](https://codecov.io/gh/Sonia-corporation/yokai/branch/develop/graph/badge.svg?token=CPTMPLYTUR)](https://codecov.io/gh/Sonia-corporation/yokai)
 [![Mutation testing badge](https://img.shields.io/endpoint?style=flat-square&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2FSonia-corporation%2Fyokai%2Fdevelop)](https://dashboard.stryker-mutator.io/reports/github.com/Sonia-corporation/yokai/develop)
 ![GitHub issues](https://img.shields.io/github/issues-raw/sonia-corporation/yokai?style=flat-square)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/sonia-corporation/yokai?style=flat-square)
