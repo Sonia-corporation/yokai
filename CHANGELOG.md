@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.0.1](https://github.com/Sonia-corporation/yokai/compare/1.0.0...1.0.1) (2021-02-14)
+
+
+### :bug: Bug Fixes
+
+* **release:** change the name of the package to publish on npm ([ee43014](https://github.com/Sonia-corporation/yokai/commit/ee430140dfe2d630aaa08b7c7460417e3f095d87))
+
 # [1.0.0](https://github.com/Sonia-corporation/yokai/compare/...1.0.0) (2021-02-14)
 
 
