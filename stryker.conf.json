@@ -4,8 +4,8 @@
   "reporters": ["clear-text", "progress", "dots", "html"],
   "testRunner": "jest",
   "coverageAnalysis": "all",
-  "tsconfigFile": "tsconfig.json",
-  "mutate": ["apps/**/*.ts", "!apps/**/*.spec.ts", "!apps/**/__mocks__/*.spec.ts", "!apps/**/__mocks__/"],
+  "tsconfigFile": "tsconfig.base.json",
+  "mutate": ["!apps/**/*.spec.ts", "!apps/**/__mocks__/*.spec.ts", "!apps/**/__mocks__/", "apps/game/**/*.ts"],
   "allowConsoleColors": true,
   "dashboard": {
     "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
