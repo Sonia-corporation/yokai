@@ -144,7 +144,7 @@
     "@stryker-mutator/jest-runner": "5.0.0",
     "@stryker-mutator/typescript-checker": "5.0.0",
     "@types/jest": "26.0.8",
-    "@types/node": "12.12.38",
+    "@types/node": "12.12.70",
     "@typescript-eslint/eslint-plugin": "4.15.2",
     "@typescript-eslint/parser": "4.15.2",
     "all-contributors-cli": "6.20.0",
