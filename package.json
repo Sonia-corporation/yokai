@@ -106,18 +106,18 @@
     "contributors:generate": "all-contributors generate"
   },
   "dependencies": {
-    "@angular/animations": "^11.0.0",
-    "@angular/common": "^11.0.0",
-    "@angular/compiler": "^11.0.0",
-    "@angular/core": "^11.0.0",
-    "@angular/forms": "^11.0.0",
-    "@angular/platform-browser": "^11.0.0",
-    "@angular/platform-browser-dynamic": "^11.0.0",
-    "@angular/router": "^11.0.0",
+    "@angular/animations": "^11.1.2",
+    "@angular/common": "^11.1.2",
+    "@angular/compiler": "^11.1.2",
+    "@angular/core": "^11.1.2",
+    "@angular/forms": "^11.1.2",
+    "@angular/platform-browser": "^11.1.2",
+    "@angular/platform-browser-dynamic": "^11.1.2",
+    "@angular/router": "^11.1.2",
     "@nrwl/angular": "11.2.10",
     "rxjs": "~6.6.3",
     "tslib": "^2.0.0",
-    "zone.js": "^0.10.2"
+    "zone.js": "^0.15.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.1100.7",
@@ -125,8 +125,8 @@
     "@angular-eslint/eslint-plugin-template": "1.0.0",
     "@angular-eslint/template-parser": "1.0.0",
     "@angular/cli": "11.0.7",
-    "@angular/compiler-cli": "11.1.2",
-    "@angular/language-service": "11.1.2",
+    "@angular/compiler-cli": "11.2.14",
+    "@angular/language-service": "11.2.14",
     "@ngneat/spectator": "7.1.0",
     "@nrwl/cli": "11.2.10",
     "@nrwl/cypress": "11.2.10",
