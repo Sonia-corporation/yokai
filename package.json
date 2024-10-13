@@ -158,7 +158,7 @@
     "eslint-config-prettier": "7.2.0",
     "eslint-config-recommended": "4.1.0",
     "eslint-import-resolver-typescript": "2.3.0",
-    "eslint-plugin-cypress": "2.11.2",
+    "eslint-plugin-cypress": "4.0.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jest": "24.1.5",
     "eslint-plugin-jsdoc": "31.6.1",
