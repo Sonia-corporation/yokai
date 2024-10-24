@@ -44,8 +44,8 @@
     }
   },
   "engines": {
-    "node": ">=12.x",
-    "npm": ">=6"
+    "node": "23.1.0",
+    "npm": "7.6.3"
   },
   "private": false,
   "files": [
@@ -106,18 +106,18 @@
     "contributors:generate": "all-contributors generate"
   },
   "dependencies": {
-    "@angular/animations": "^11.0.0",
-    "@angular/common": "^11.0.0",
-    "@angular/compiler": "^11.0.0",
-    "@angular/core": "^11.0.0",
-    "@angular/forms": "^11.0.0",
-    "@angular/platform-browser": "^11.0.0",
-    "@angular/platform-browser-dynamic": "^11.0.0",
-    "@angular/router": "^11.0.0",
+    "@angular/animations": "11.1.2",
+    "@angular/common": "11.1.2",
+    "@angular/compiler": "11.1.2",
+    "@angular/core": "11.1.2",
+    "@angular/forms": "11.1.2",
+    "@angular/platform-browser": "11.1.2",
+    "@angular/platform-browser-dynamic": "11.1.2",
+    "@angular/router": "11.1.2",
     "@nrwl/angular": "11.2.10",
-    "rxjs": "~6.6.3",
-    "tslib": "^2.0.0",
-    "zone.js": "^0.10.2"
+    "rxjs": "6.6.3",
+    "tslib": "2.2.0",
+    "zone.js": "0.10.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.1100.7",
