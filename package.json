@@ -44,7 +44,7 @@
     }
   },
   "engines": {
-    "node": ">=12.x",
+    "node": "23.9.0",
     "npm": ">=6"
   },
   "private": false,
